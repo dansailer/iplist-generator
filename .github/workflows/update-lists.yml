@@ -1,0 +1,37 @@
+name: Update IP Lists
+
+on:
+  schedule:
+    - cron: "0 0 * * *" # Runs daily at midnight UTC
+  workflow_dispatch: # Allows manual trigger
+
+jobs:
+  update-lists:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Go
+        uses: actions/setup-go@v4
+        with:
+          go-version: "1.21" # Adjust version as needed
+
+      - name: Run IP list updater
+        run: go run main.go # Adjust the path to your Go script if different
+
+      - name: Check for changes
+        id: git-check
+        run: |
+          git status --porcelain
+          echo "changed=$(git status --porcelain | wc -l)" >> $GITHUB_OUTPUT
+
+      - name: Commit changes
+        if: steps.git-check.outputs.changed > 0
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add .
+          git commit -m "chore: update IP lists [skip ci]"
+          git push

@@ -1,0 +1,9 @@
+sources:
+  - url: https://raw.githubusercontent.com/nickspaargaren/no-google/master/categories/youtubeparsed
+    name: youtube
+  - url: https://raw.githubusercontent.com/v2fly/domain-list-community/refs/heads/master/data/spotify
+    name: spotify
+  - url: https://raw.githubusercontent.com/v2fly/domain-list-community/refs/heads/master/data/twitch
+    name: twitch
+  - url: https://raw.githubusercontent.com/v2fly/domain-list-community/refs/heads/master/data/tiktok
+    name: tiktok

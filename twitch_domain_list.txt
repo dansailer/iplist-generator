@@ -59,6 +59,7 @@ atl01.abs.hls.ttvnw.net
 atl01.hls.ttvnw.net
 atl01.no-abs.hls.ttvnw.net
 b3b208f346c2.imperator.akamai.hls.live-video.net
+beff21ef3d43.imperator.akamai.hls.ttvnw.net
 ber01.abs.hls.ttvnw.net
 ber01.hls.ttvnw.net
 ber01.no-abs.hls.ttvnw.net

@@ -188,6 +188,7 @@ insights.spotify.com
 insightsunwound.byspotify.com
 investorday.byspotify.com
 investorday2022.byspotify.com
+investorday22.byspotify.com
 investors.spotify.com
 ipg-partner-staging.spotifyforbrands.com
 ipg-partner.spotifyforbrands.com
@@ -340,6 +341,7 @@ sparta-api.spotify.com
 spoti.fi
 spotify-cokestudio-screening.byspotify.com
 spotify-everywhere.com
+spotify-gmedia-test2.spotifycdn.com
 spotify.com
 spotify.com.edgesuite.net
 spotify.design
@@ -362,6 +364,7 @@ spotifypodcastersday.byspotify.com
 spotifytalksafrica.byspotify.com
 spotifytalkspakistan.byspotify.com
 spotifytoppodcasters.byspotify.com
+spotifywrappedtech.byspotify.com
 staging-change.spotify.com
 staging-origin.creators.spotify.com
 starjam2021.byspotify.com

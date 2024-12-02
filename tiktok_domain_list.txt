@@ -39,6 +39,7 @@ blog.trending.tiktok.com
 business-sso.eu.tiktok.com
 business-sso.us.tiktok.com
 business-suite.tiktok.com
+business-tips.tiktok.com
 bytees.oec-pay.tiktokd.net
 byteoversea.com
 campaign19-normal-useast5.us.tiktokv.com
@@ -139,6 +140,7 @@ norbert01-useast5.tiktokd.org
 notifications.tiktok.com
 olympus.tiktokd.net
 orthrus-tx.tiktokd.org
+p16-tcscdn.byteoversea.com
 p16-test.tiktokcdn.com
 p16.muscdn.com
 p16.tiktokcdn.com
@@ -375,6 +377,7 @@ us.tiktokd.org
 us.tiktokv.com
 useast5-cloudnative.tiktokd.org
 v.tiktokcdn.com
+v16-tcscdn.byteoversea.com
 v16-tst.tiktokcdn.com
 v16-up.tiktokv.com
 v16-web.tiktokcdn.com

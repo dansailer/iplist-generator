@@ -1,8 +1,8 @@
 name: Update IP Lists
 
 on:
-  schedule:
-    - cron: "0 0 * * *" # Runs daily at midnight UTC
+  #schedule:
+  #  - cron: "0 0 * * *" # Runs daily at midnight UTC
   workflow_dispatch: # Allows manual trigger
 
 jobs:
@@ -19,7 +19,7 @@ jobs:
           go-version: "1.21" # Adjust version as needed
 
       - name: Run IP list updater
-        run: go run main.go # Adjust the path to your Go script if different
+        run: go run .
 
       - name: Check for changes
         id: git-check

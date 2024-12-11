@@ -8,6 +8,9 @@ sources:
   - url: https://raw.githubusercontent.com/v2fly/domain-list-community/refs/heads/master/data/tiktok
     name: tiktok
     category: dnsfilterlist
+  - url: https://raw.githubusercontent.com/v2fly/domain-list-community/refs/heads/master/data/instagram
+    name: instagram
+    category: dnsfilterlist
   - url: https://raw.githubusercontent.com/nickspaargaren/no-google/master/categories/youtubeparsed
     name: youtube
     category: domainlist

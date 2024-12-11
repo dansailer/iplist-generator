@@ -2,13 +2,12 @@ package main
 
 import (
 	"bufio"
+	"context"
 	"flag"
 	"fmt"
 	"os"
 	"strings"
 	"time"
-
-	"context"
 
 	"github.com/miekg/dns"
 	logger "github.com/sirupsen/logrus"

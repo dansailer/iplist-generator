@@ -43,6 +43,8 @@ atemporais.byspotify.com
 audio-ak-spotify-com.akamaized.net
 audio-cf-del-574-off.spotifycdn.com
 audio-cf-del-574.spotifycdn.com
+audio-fa-h3svcb-exp.cdn-gslb.spotify.com
+audio-fa-h3svcb-ofl.cdn-gslb.spotify.com
 audio-fa-quic-svcb.cdn-gslb.spotify.com
 audio-gm-del-277.spotifycdn.com
 audio-gm-fb.spotifycdn.com
@@ -111,6 +113,8 @@ culturenext2022.byspotify.com
 culturenextvol1-sea.spotifyforbrands.com
 day1club-uk.byspotify.com
 day1club.byspotify.com
+dealer-euw1.spotify.com
+dealer-usc1.spotify.com
 deckbuilder.spotifyforbrands.com
 demobuilder-staging.spotifyforbrands.com
 demobuilder.spotifyforbrands.com
@@ -149,6 +153,7 @@ findtheone.byspotify.com
 findyourflow.byspotify.com
 found.byspotify.com
 fuegomixtapes.byspotify.com
+g2.spotify.com
 gc.scdn.co
 getreadywithmusic.byspotify.com
 giftcards.byspotify.com
@@ -266,6 +271,7 @@ playlistinabottle.byspotify.com
 pod.spoti.fi
 podcast101.byspotify.com
 podcastcharts.byspotify.com
+podcastdataset.byspotify.com
 podcasterday.byspotify.com
 podcasters-staging.spotify.com
 podcasters.byspotify.com
@@ -544,6 +550,7 @@ www.playlistart.byspotify.com
 www.playlistinabottle.byspotify.com
 www.podcast101.byspotify.com
 www.podcastcharts.byspotify.com
+www.podcasterday.byspotify.com
 www.podcastfestival.byspotify.com
 www.podcasting.spotifyjobs.com
 www.podcastsdataset.byspotify.com
@@ -569,6 +576,7 @@ www.sea.spotifyforbrands.com
 www.secondarylayertool.byspotify.com
 www.segments-staging.spotifyforbrands.com
 www.segments.spotifyforbrands.com
+www.sejoganoplay.byspotify.com
 www.sergegainsbourg.byspotify.com
 www.sfc.byspotify.com
 www.shakira.byspotify.com
@@ -613,6 +621,7 @@ www.webplayer.byspotify.com
 www.wpp-partner-staging.spotifyforbrands.com
 www.wpp-partner.spotifyforbrands.com
 www.wrappedforartists.byspotify.com
+www.wrappedforauthors.byspotify.com
 www.wrappedforcreators.byspotify.com
 www.wrappedforpodcasters.byspotify.com
 www.wrappedforsongwriters.byspotify.com

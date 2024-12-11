@@ -27,6 +27,7 @@ ap-southeast-1.uploads-regional.twitch.tv
 api-adg.prod.us-west2.twitch.tv
 api-fast.twitch.tv
 api.twitch.tv
+api.us-west-2.internal.twitch.tv
 apn11-0.playlist.live-video.net
 apn11-0.playlist.ttvnw.net
 apn12-0.playlist.live-video.net
@@ -674,6 +675,7 @@ owl.prod.internal.us-west-2.twitch.tv
 owl.staging.internal.us-west-2.twitch.tv
 p.twitchcdn.net
 pages.marketing.twitch.tv
+panels-images-prod.twitch.tv
 panels-images-staging.twitch.tv
 panels-images.twitch.tv
 panels-staging.twitch.tv

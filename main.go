@@ -26,14 +26,20 @@ type Config struct {
 var (
 	sourceListPath string
 	logLevel       string
-	dnsServer      string
+	dnsServers     []string
+	enableIPv4     bool
+	enableIPv6     bool
 	client         *MerkleMapClient
 )
 
 func init() {
 	flag.StringVar(&sourceListPath, "config", "sourcelist.yml", "Path to source list configuration file")
 	flag.StringVar(&logLevel, "log-level", "info", "Log level (debug, info, warn, error)")
-	flag.StringVar(&dnsServer, "dns-server", "1.1.1.1:53", "DNS servers to use for lookups, e.g. 1.1.1.1:53 or 8.8.8.8:53 or 9.9.9.9:53")
+	dnsServersFlag := flag.String("dns-servers", "1.1.1.1:53,9.9.9.9:53,8.8.8.8:53,130.59.31.251:53,208.67.220.220:53", "Comma-separated list of DNS servers to use for lookups, e.g. 1.1.1.1:53,8.8.8.8:53,9.9.9.9:53,,130.59.31.251:53 or 208.67.220.220:53")
+	flag.BoolVar(&enableIPv4, "ipv4", true, "Enable IPv4 lookups (default: true)")
+	flag.BoolVar(&enableIPv6, "ipv6", false, "Enable IPv6 lookups (default: false)")
+	flag.Parse()
+	dnsServers = strings.Split(*dnsServersFlag, ",")
 	logger.SetFormatter(&logger.TextFormatter{
 		FullTimestamp:   true,
 		TimestampFormat: "2006-01-02 15:04:05",
@@ -90,6 +96,9 @@ func main() {
 			if source.Category == "dnsfilterlist" {
 				if strings.HasPrefix(line, "full:") {
 					line = strings.TrimPrefix(line, "full:")
+				} else if strings.HasPrefix(line, "include:") {
+					logger.Infof("Interesting domain list to %s", line)
+					continue
 				} else {
 					// Take everything before the first space
 					if idx := strings.Index(line, " "); idx != -1 {
@@ -127,8 +136,12 @@ func main() {
 			ipv4Results = append(ipv4Results, ipv4s...)
 			ipv6Results = append(ipv6Results, ipv6s...)
 		}
-		writeToFile(fmt.Sprintf("%s_ipv4_list.txt", source.Name), ipv4Results)
-		writeToFile(fmt.Sprintf("%s_ipv6_list.txt", source.Name), ipv6Results)
+		if enableIPv4 {
+			writeToFile(fmt.Sprintf("%s_ipv4_list.txt", source.Name), ipv4Results)
+		}
+		if enableIPv6 {
+			writeToFile(fmt.Sprintf("%s_ipv6_list.txt", source.Name), ipv6Results)
+		}
 	}
 	logger.Info("Processing complete!")
 }
@@ -137,25 +150,32 @@ func lookupIPs(domain string) ([]string, []string) {
 	var ipv4s, ipv6s []string
 	client := &dns.Client{}
 
-	// Lookup A records
-	m := &dns.Msg{}
-	m.SetQuestion(dns.Fqdn(domain), dns.TypeA)
-	r, _, err := client.Exchange(m, dnsServer)
-	if err == nil {
-		for _, answer := range r.Answer {
-			if aRecord, ok := answer.(*dns.A); ok {
-				ipv4s = append(ipv4s, aRecord.A.String())
+	for _, server := range dnsServers {
+		// Lookup A records
+		if enableIPv4 {
+			m := &dns.Msg{}
+			m.SetQuestion(dns.Fqdn(domain), dns.TypeA)
+			r, _, err := client.Exchange(m, server)
+			if err == nil {
+				for _, answer := range r.Answer {
+					if aRecord, ok := answer.(*dns.A); ok {
+						ipv4s = append(ipv4s, aRecord.A.String())
+					}
+				}
 			}
 		}
-	}
 
-	// Lookup AAAA records
-	m.SetQuestion(dns.Fqdn(domain), dns.TypeAAAA)
-	r, _, err = client.Exchange(m, dnsServer)
-	if err == nil {
-		for _, answer := range r.Answer {
-			if aaaaRecord, ok := answer.(*dns.AAAA); ok {
-				ipv6s = append(ipv6s, aaaaRecord.AAAA.String())
+		// Lookup AAAA records
+		if enableIPv6 {
+			m := &dns.Msg{}
+			m.SetQuestion(dns.Fqdn(domain), dns.TypeAAAA)
+			r, _, err := client.Exchange(m, server)
+			if err == nil {
+				for _, answer := range r.Answer {
+					if aaaaRecord, ok := answer.(*dns.AAAA); ok {
+						ipv6s = append(ipv6s, aaaaRecord.AAAA.String())
+					}
+				}
 			}
 		}
 	}

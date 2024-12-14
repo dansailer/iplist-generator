@@ -222,6 +222,7 @@ pull-flv-f77-tt02-tt03.fcdn.eu.tiktokcdn.com
 pull-flv-f77-tt02.fcdn.us.tiktokv.com
 pull-flv-f77-tt02.tiktokcdn-us.com
 pull-flv-f77-tt02.tiktokcdn.com
+pull-flv-f77-tt03-expt.fcdn.eu.tiktokcdn.com
 pull-flv-f77-tt03-tt02.tiktokcdn-us.com
 pull-flv-f77-tt03.fcdn.eu.tiktokcdn.com
 pull-flv-f77-tt03.fcdn.us.tiktokcdn.com
@@ -405,6 +406,7 @@ v77-ch-a.tiktokcdn.com
 v77-ch-b.tiktokcdn.com
 v77-ch-c.tiktokcdn.com
 v77-coin.tiktokcdn.com
+v77-perf.tiktokcdn.com
 v77-sla-measure.tiktokcdn.com
 v77-tcs.tiktokcdn.com
 v77.tiktokcdn.com

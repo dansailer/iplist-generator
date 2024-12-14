@@ -613,6 +613,7 @@ www.straykids5star.byspotify.com
 www.subelealamexcla.byspotify.com
 www.supergrouper.byspotify.com
 www.talkssweden.byspotify.com
+www.test-project.byspotify.com
 www.test.kubeflow-platform.spotify.com
 www.todaystopfans.byspotify.com
 www.top5.byspotify.com

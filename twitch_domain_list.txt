@@ -1,6 +1,10 @@
 1cc139a67cea.imperator.akamai.hls.ttvnw.net
 3bce5d7d3755.imperator.akamai.hls.live-video.net
+4736eee1a49d.imperator.akamai.abs.hls.live-video.net
 4736eee1a49d.imperator.akamai.hls.live-video.net
+4736eee1a49d.imperator.akamai.no-abs.hls.live-video.net
+7bca29df4f20.chantenay.akamai.abs.hls.ttvnw.net
+92c06a35ee61.chantenay.akamai.hls.live-video.net
 adee24e5cede.imperator.akamai.hls.ttvnw.net
 affiliate.twitch.tv
 amber.chanteney.cloudfront.hls.live-video.net
@@ -59,8 +63,13 @@ assets.twitch.tv
 atl01.abs.hls.ttvnw.net
 atl01.hls.ttvnw.net
 atl01.no-abs.hls.ttvnw.net
+b3b208f346c2.imperator.akamai.abs.hls.live-video.net
 b3b208f346c2.imperator.akamai.hls.live-video.net
+b3b208f346c2.imperator.akamai.no-abs.hls.live-video.net
+b3b208f346c2.z.imperator.akamai.hls.live-video.net
 beff21ef3d43.imperator.akamai.hls.ttvnw.net
+beff21ef3d43.imperator.akamai.no-abs.hls.ttvnw.net
+beff21ef3d43.z.imperator.akamai.hls.ttvnw.net
 ber01.abs.hls.ttvnw.net
 ber01.hls.ttvnw.net
 ber01.no-abs.hls.ttvnw.net
@@ -272,6 +281,7 @@ extensions-discovery-images.twitch.tv
 extensions-worker.sings.twitch.tv
 extensions.sings.twitch.tv
 fa7b9fa60158.imperator.akamai.hls.ttvnw.net
+fa7b9fa60158.z.imperator.akamai.hls.ttvnw.net
 fastly.vod.hls.ttvnw.net
 for01.abs.hls.ttvnw.net
 for01.hls.ttvnw.net
@@ -790,6 +800,8 @@ science.twitch.tv
 scl01.abs.hls.ttvnw.net
 scl01.hls.ttvnw.net
 scl01.no-abs.hls.ttvnw.net
+scoop.sci.twitch.tv
+scoop.twitch.tv
 se.blog.twitch.tv
 sea01.abs.hls.ttvnw.net
 sea01.hls.ttvnw.net

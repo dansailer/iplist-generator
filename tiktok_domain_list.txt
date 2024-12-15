@@ -142,6 +142,7 @@ olympus.tiktokd.net
 orthrus-tx.tiktokd.org
 p16-tcscdn.byteoversea.com
 p16-test.tiktokcdn.com
+p16-tiktokcdn-com.akamaized.net
 p16.muscdn.com
 p16.tiktokcdn.com
 p16a.tiktokcdn.com

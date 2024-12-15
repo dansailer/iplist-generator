@@ -26,6 +26,7 @@ type Config struct {
 var (
 	sourceListPath string
 	logLevel       string
+	searchDomain   string
 	dnsServers     []string
 	enableIPv4     bool
 	enableIPv6     bool
@@ -38,8 +39,10 @@ func init() {
 	dnsServersFlag := flag.String("dns-servers", "1.1.1.1:53,9.9.9.9:53,8.8.8.8:53,130.59.31.251:53,208.67.220.220:53", "Comma-separated list of DNS servers to use for lookups, e.g. 1.1.1.1:53,8.8.8.8:53,9.9.9.9:53,,130.59.31.251:53 or 208.67.220.220:53")
 	flag.BoolVar(&enableIPv4, "ipv4", true, "Enable IPv4 lookups (default: true)")
 	flag.BoolVar(&enableIPv6, "ipv6", false, "Enable IPv6 lookups (default: false)")
+	flag.StringVar(&searchDomain, "search-domain", "", "Just return IPs for this domain.")
 	flag.Parse()
 	dnsServers = strings.Split(*dnsServersFlag, ",")
+
 	logger.SetFormatter(&logger.TextFormatter{
 		FullTimestamp:   true,
 		TimestampFormat: "2006-01-02 15:04:05",
@@ -55,6 +58,20 @@ func main() {
 		return
 	}
 	logger.SetLevel(level)
+
+	if searchDomain != "" {
+		logger.Infof("Looking up DNS records for %s", searchDomain)
+		ipv4s, ipv6s := lookupIPs(searchDomain)
+		// Log IPv4 results
+		for _, ipv4 := range ipv4s {
+			logger.Infof("IPv4 record for %s: %s", searchDomain, ipv4)
+		}
+		// Log IPv6 results
+		for _, ipv6 := range ipv6s {
+			logger.Infof("IPv6 record for %s: %s", searchDomain, ipv6)
+		}
+		return
+	}
 
 	client = NewMerkleMapClient("https://api.merklemap.com", 30*time.Second, logger.StandardLogger())
 
@@ -96,6 +113,9 @@ func main() {
 			if source.Category == "dnsfilterlist" {
 				if strings.HasPrefix(line, "full:") {
 					line = strings.TrimPrefix(line, "full:")
+					if idx := strings.Index(line, " "); idx != -1 {
+						line = line[:idx]
+					}
 				} else if strings.HasPrefix(line, "include:") {
 					logger.Infof("Interesting domain list to %s", line)
 					continue

@@ -67,6 +67,7 @@ b3b208f346c2.imperator.akamai.abs.hls.live-video.net
 b3b208f346c2.imperator.akamai.hls.live-video.net
 b3b208f346c2.imperator.akamai.no-abs.hls.live-video.net
 b3b208f346c2.z.imperator.akamai.hls.live-video.net
+beff21ef3d43.imperator.akamai.abs.hls.ttvnw.net
 beff21ef3d43.imperator.akamai.hls.ttvnw.net
 beff21ef3d43.imperator.akamai.no-abs.hls.ttvnw.net
 beff21ef3d43.z.imperator.akamai.hls.ttvnw.net
@@ -280,7 +281,9 @@ extensions-discovery-images-staging.twitch.tv
 extensions-discovery-images.twitch.tv
 extensions-worker.sings.twitch.tv
 extensions.sings.twitch.tv
+fa7b9fa60158.imperator.akamai.abs.hls.ttvnw.net
 fa7b9fa60158.imperator.akamai.hls.ttvnw.net
+fa7b9fa60158.imperator.akamai.no-abs.hls.ttvnw.net
 fa7b9fa60158.z.imperator.akamai.hls.ttvnw.net
 fastly.vod.hls.ttvnw.net
 for01.abs.hls.ttvnw.net
@@ -350,6 +353,7 @@ health.sae12.playlist.live-video.net
 health.sae12.rtx.live-video.net
 health.sae13.playlist.live-video.net
 health.sae13.rtx.live-video.net
+health.use11-0.playlist.live-video.net
 health.use21.rtx.live-video.net
 health.use22.rtx.live-video.net
 health.use23.rtx.live-video.net
@@ -945,6 +949,8 @@ us-west-2.roundtrip.twitch.tv
 us-west-2.rtmp.moonlight.twitch.tv
 us-west-2.rtmp.stg.moonlight.twitch.tv
 us-west-2.uploads-regional.twitch.tv
+use11-0.playlist.live-video.net
+use11-0.playlist.ttvnw.net
 userlifecycle-ui.stage.us-west2.twitch.tv
 usher.ttvnw.net
 usw20.beta.playlist.live-video.net

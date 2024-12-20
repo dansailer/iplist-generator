@@ -4,6 +4,7 @@
 2023wrappedreveal.byspotify.com
 7dayarmyparty.byspotify.com
 90scountry.byspotify.com
+acompleteunknown.byspotify.com
 acquisitions.spotify.com
 adanalytics.spotify.com
 adlab.spotify.com
@@ -92,6 +93,7 @@ cms.staging-change.spotify.com
 common.spotify.com
 community-stage.spotify.com
 community.spotify.com
+confidence-launch.byspotify.com
 confidence.byspotify.com
 confidence.spotify.com
 connect.spotify.com

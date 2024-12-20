@@ -14,6 +14,8 @@ carstagram.com
 cdn.cloud.instastyle.tv
 cdninstagram.com
 chickstagram.com
+copyright.lnstagram-help.com
+cpanel.instagramhilecim.com
 cpanel.instagramhilesi.org
 cpanel.instagramizlenme.com
 cpanel.instagramn.com
@@ -87,6 +89,7 @@ latest.instagram.com
 lnstagram-help.com
 m.instagram.com
 mail.instagramhashtags.net
+mail.instagramhilecim.com
 mail.instagramhilesi.org
 mail.instagramizlenme.com
 mail.instagramn.com
@@ -135,16 +138,19 @@ video-iev1-1.cdninstagram.com
 video-mct1-1.cdninstagram.com
 web-instagram.net
 web.cloud.instastyle.tv
+webdisk.instagramhilecim.com
 webdisk.instagramhilesi.org
 webdisk.instagramizlenme.com
 webdisk.instagramn.com
 webdisk.lnstagram-help.com
+webmail.instagramhilecim.com
 webmail.instagramhilesi.org
 webmail.instagramn.com
 webmail.lnstagram-help.com
 whm.lnstagram-help.com
 www.IG.ME
 www.araclar.instagramhilecim.com
+www.copyright.lnstagram-help.com
 www.engineering.instagram.com
 www.ig.me
 www.instagram-brand.com

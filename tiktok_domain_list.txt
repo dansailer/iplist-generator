@@ -27,6 +27,7 @@ api53-core-c-alisg.tiktokv.com
 api53-core-c-useast1a.tiktokv.com
 api53-normal-c-alisg.tiktokv.com
 api53-normal-c-useast1a.tiktokv.com
+api55-core-c-alisg.tik-tokapi.com
 api77-core-c-alisg.tiktokv.com
 api77-core-c-useast1a.tiktokv.com
 api77-normal-c-alisg.tiktokv.com

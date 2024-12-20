@@ -242,6 +242,7 @@ newjeansgetup.byspotify.com
 news.confidence.spotify.com
 news.spotify.com
 newsroom.spotify.com
+newyear2021.byspotify.com
 nextwave.byspotify.com
 nmf.byspotify.com
 noteable.spotify.com

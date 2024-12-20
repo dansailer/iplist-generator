@@ -19,6 +19,9 @@ A Go application that processes lists of domains from various sources, performs 
   - Default wildcard matching for catching all subdomains
   - Automatic subdomain discovery using [MerkleMap](https://www.merklemap.com)
 
+> [!TIP]
+> For YouTube use the excellent work of [touhidurrr/iplist-youtube](https://github.com/touhidurrr/iplist-youtube/blob/main/ipv4_list.txt)
+
 ## Prerequisites
 
 - Go 1.x or higher
@@ -26,6 +29,21 @@ A Go application that processes lists of domains from various sources, performs 
   - github.com/miekg/dns
   - github.com/sirupsen/logrus
   - gopkg.in/yaml.v3
+
+## Usage in Terraform and Ubiquity provider
+
+```hcl
+data "http" "twitch_cidrv4_list" {
+  url = "https://raw.githubusercontent.com/dansailer/iplist-generator/refs/heads/main/twitch_ipv4_list.txt"
+}
+
+resource "unifi_firewall_group" "twitchv4" {
+  name = "Twitch IPv4"
+  type = "address-group"
+
+  members = split("\n", trimspace(data.http.twitch_cidrv4_list.response_body))
+}
+```
 
 ## Influences
 

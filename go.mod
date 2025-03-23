@@ -2,7 +2,7 @@ module iplist-generator
 
 go 1.23.3
 
-require github.com/miekg/dns v1.1.62
+require github.com/miekg/dns v1.1.63
 
 require (
 	github.com/sirupsen/logrus v1.9.3

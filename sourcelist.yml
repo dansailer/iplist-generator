@@ -14,3 +14,15 @@ sources:
   - url: https://raw.githubusercontent.com/v2fly/domain-list-community/refs/heads/master/data/pinterest
     name: pinterest
     category: dnsfilterlist
+  - url: https://raw.githubusercontent.com/v2fly/domain-list-community/refs/heads/master/data/plutotv
+    name: plutotv
+    category: dnsfilterlist
+  - url: https://raw.githubusercontent.com/dansailer/iplist-generator/refs/heads/main/xoulai.txt
+    name: xoulai
+    category: dnsfilterlist
+  - url: https://raw.githubusercontent.com/dansailer/iplist-generator/refs/heads/main/characterai.txt
+    name: characterai
+    category: dnsfilterlist
+  - url: https://raw.githubusercontent.com/dansailer/iplist-generator/refs/heads/main/talkieai.txt
+    name: talkieai
+    category: dnsfilterlist
